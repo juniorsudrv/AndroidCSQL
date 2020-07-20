@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "419207819762",
+    "firebase_url": "https://projetoscasvendas.firebaseio.com",
+    "project_id": "projetoscasvendas",
+    "storage_bucket": "projetoscasvendas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419207819762:android:865e758114447e45fbfb6b",
+        "android_client_info": {
+          "package_name": "com.conexao.projetoscas400"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419207819762-36mmdr04nogd3dq5adh64gi4qtlbefk5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYLEkv7Rm4Z6VjDin5XWqQarlc6q7SMb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419207819762-36mmdr04nogd3dq5adh64gi4qtlbefk5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

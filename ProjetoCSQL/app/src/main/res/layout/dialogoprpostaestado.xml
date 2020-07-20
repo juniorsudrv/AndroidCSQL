@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proposta Atual"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <LinearLayout
+            android:id="@+id/tt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView  android:padding="5dp"
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Produto"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <EditText  android:padding="5dp"
+                    android:id="@+id/produto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Produto"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView  android:padding="5dp"
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Quantidade"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <EditText  android:padding="5dp"
+                    android:id="@+id/quantidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Quantidade"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView  android:padding="5dp"
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fornecedor"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <EditText  android:padding="5dp"
+                    android:id="@+id/fornecedor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView  android:padding="5dp"
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Valor"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <EditText  android:padding="5dp"
+                    android:id="@+id/valor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Valor"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small">
+
+                    <requestFocus />
+                </EditText>
+                >
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/dadosproposta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            >
+ <TableRow
+     android:padding="5dp"
+     android:layout_gravity="center"
+     android:gravity="center"
+    >
+
+     <TextView
+         android:id="@+id/textView6"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingLeft="5dp"
+         android:text="Situação Comprador"
+         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+     <TextView
+         android:id="@+id/textView15"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingLeft="5dp"
+         android:text="Situação Vendedor"
+         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+ </TableRow>
+
+            <TableRow
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/estadocomprador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comprador: Aguardando"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/estadovendedor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vendedor: Aguardando"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:paddingLeft="5dp" />
+
+            </TableRow>
+
+
+
+            <TableRow  android:layout_gravity="center"
+                android:gravity="center"
+
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/alterarcomprador"
+                    style="@android:style/Widget.Button.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Responder" android:paddingLeft="5dp" />
+
+                <Button
+                    android:id="@+id/alterarvendedor"
+                    style="@android:style/Widget.Button.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Responder" android:paddingLeft="5dp" />
+            </TableRow>
+            <TableRow  android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:textSize="14dp"
+                    android:id="@+id/assinaturacomprador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Assinatura"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                     android:textColor="@color/colorPrimary"
+
+
+                    />
+
+         <TextView
+             android:textSize="14dp"
+                    android:id="@+id/assinaturavendedor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Assinatura"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+             android:padding="5dp"
+             android:textColor="@color/colorPrimary"
+             />
+            </TableRow>
+
+
+            <TableRow
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/estadopagamento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vendedor: Aguardando"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:paddingLeft="5dp"
+                    android:visibility="gone"
+                    />
+                <Button
+                    android:padding="5dp"
+                    android:id="@+id/fazerpagamento"
+                    style="@android:style/Widget.Button.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Fazer pagamento"
+                    android:paddingLeft="5dp"
+                    android:visibility="gone"
+                    />
+                <Button
+                    android:padding="5dp"
+                    android:id="@+id/imprimirpdf"
+                    style="@android:style/Widget.Button.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Imprimir PDF" android:paddingLeft="5dp"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
